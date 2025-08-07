@@ -6,3 +6,4 @@ The course required to do 3 different homeworks, one for each major topic:
 2) Furthest-First Traversal (FFT)
 3) Sampling (Reservoir sampling and sticky sampling).
 
+Further information for each howework can be found in the respective folder in the repository.
