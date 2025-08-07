@@ -33,7 +33,7 @@ Each algorithm approximates or exactly identifies items that occur frequently in
 ### Run with Spark Submit
 
 ```bash
-spark-submit stream_frequent_items.py <n> <phi> <epsilon> <delta> <port>
+spark-submit G055HW3.py <n> <phi> <epsilon> <delta> <port>
 ```
 
 ### Parameters
@@ -47,22 +47,14 @@ spark-submit stream_frequent_items.py <n> <phi> <epsilon> <delta> <port>
 ### Example
 
 ```bash
-spark-submit stream_frequent_items.py 10000 0.01 0.001 0.01 9999
+spark-submit G055HW3.py 10000 0.01 0.001 0.01 9999
 ```
 
 ---
 
 ##  Input Format
 
-This program listens to a **socket stream** (e.g., using `nc` or an online generator) where each line is expected to be an **integer item**.
-
-You can generate a stream using netcat:
-
-```bash
-nc -lk 9999
-```
-
-Then type or send integers separated by newlines.
+This program listens to a **socket stream** where each line is expected to be an **integer item**.
 
 ---
 
